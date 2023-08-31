@@ -1,4 +1,22 @@
-# Horizon Keyboard
+# Horizon *Mini* Keyboard
+
+### Note:
+
+So far, this is a theoretical mod of the original, gorgeous Horizon. Changelog:
+
+- Removed 2 columns
+- Added battery connector
+- Added power switch
+
+### Todo:
+
+1. Measure if battery fits behind/above the power switch
+2. Vertify that PCB isn't broken
+3. Print
+4. Assemble
+
+---
+### Original readme below 👇
 
 ![Horizon Choc + MX complete build top photo](images/horizon-choc-mx-top.jpg)
 
