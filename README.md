@@ -10,9 +10,9 @@ So far, this is a theoretical mod of the original, gorgeous Horizon. Changelog:
 
 ### Todo:
 
-1. Measure if battery fits behind/above the power switch
-2. Vertify that PCB isn't broken
-3. Print
+1. ~~Measure if battery fits behind/above the power switch~~
+2. ~~Vertify that PCB isn't broken~~
+3. ~~Print~~
 4. Assemble
 
 ---
