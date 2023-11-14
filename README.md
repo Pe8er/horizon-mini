@@ -7,16 +7,19 @@ So far, this is a theoretical mod of the original, gorgeous Horizon. Changelog:
 - Removed 2 columns
 - Added battery connector
 - Added power switch
+- Replaced Horizon logos with Bloodborne rune graphics
 
 ### Todo:
 
-1. ~~Measure if battery fits behind/above the power switch~~
-2. ~~Vertify that PCB isn't broken~~
-3. ~~Print~~
+1. ✅ ~~Measure if battery fits behind/above the power switch~~
+2. ✅ ~~Vertify that PCB isn't broken~~
+3. ✅ ~~Print~~
 4. Assemble
 
 ---
 ### Original readme below 👇
+
+# Horizon Keyboard
 
 ![Horizon Choc + MX complete build top photo](images/horizon-choc-mx-top.jpg)
 
@@ -47,7 +50,7 @@ The bottom plate is a cutout of all the components exposed through the bottom of
 
 ## KiCad project notes
 
-The bottom and top plates are generated via a custom KiCad 6 Python SWIG plugin [Horizon Board Producer](kicad-plugins/horizon-board-producer-plugin.py).
+The bottom and top plates are generated via a custom KiCad 7 Python SWIG plugin [Horizon Board Producer](kicad-plugins/horizon-board-producer-plugin.py).
 
 For the plugin to generate these plate boards, the PCB and its footprints use the following layer convention:
 
@@ -79,6 +82,8 @@ Please note the board producer plugin expects the following folder structure:
 
 **IMPORTANT:** If you would like to use this plugin and plate edge cuts convention for you own project, please make sure you carefully examine the output Gerber files! The plugin ultimately worked well for my case, but you might need to make adjustments to the plugin to suit your project. And to reduce the chance of being charged extra money by PCB manufacturers, use footprint plate holes instead of edge cuts whenever reasonable to do so.
 
+**IMPORTANT:** This plugin uses `pcbnew.LoadBoard()` to load copies of the PCB, which is [not safely supported in a running instance of KiCad](https://forum.kicad.info/t/the-loadboard-function-is-invalid/31238/9). To avoid project integrity problems this may cause to the running KiCad instance, the plugin forcefully exits KiCad upon execution completion.
+
 ## Keyboard firmware
 
 * [QMK](https://github.com/qmk/qmk_firmware/tree/master/keyboards/horizon)
@@ -89,22 +94,20 @@ Please note the board producer plugin expects the following folder structure:
 
 For PCBs, keyswitches, and keycaps, get parts depending on your desired keyswitch type.
 
-Vendor URLs are just recommendations based on quality/affordablity. I have purchased from these vendors, but have no personal affiliation with them.
-
-Part | Purpose | Quantity | Notes | Vendor URL
----- | ------- | -------- | --------- | ----------
-Main PCB  | circuit board | 1 | | Send Gerber zip files to [JLCPCB](https://jlcpcb.com/).
-Top plate PCB  | protects microcontroller | 1 | 
+Part | Purpose | Quantity | Notes
+---- | ------- | -------- | ---------
+Main PCB  | circuit board | 1 | Send Gerber zip files to [JLCPCB](https://jlcpcb.com/).
+Top plate PCB  | protects microcontroller | 1 |
 Bottom plate PCB  | protects bottom pins and components | 1 |
-Arduino Pro Micro | Microcontroller board | 1 | Or use another Pro Micro compatible board with same dimensions (confirmed Elite-C V4, nice!nano 2.0, and Adafruit KB2040 fit) | [AliExpress (TENSTAR ROBOT) - Micro USB 3-18V](https://www.aliexpress.com/item/32849563958.html)
-6x6mm DIP 4-pin tactile switch | Reset button | 1 | | [AliExpress (xin cheng electronic)- 6x6x10mm](https://www.aliexpress.com/item/32912263133.html)
-1N4148 SOD-123 | Diodes for keyboard row-column matrix | 52 | | [AliExpress (DSSRQI) - 1N4148 SOD-123](https://www.aliexpress.com/item/4000331408283.html)
-Keyswitches |  | 52 | PCB mount (5 pin) switches recommended | MX: [AliExpress (KPrepublic) - Gateron Switch RGB 5pin Clear](https://www.aliexpress.com/item/3256801798608641.html), Choc: [MKUltra Corporation - Kailh Low Profile Choc Switches](https://mkultra.click/choc-switches)
-Keycaps |  | 52 | | MX: [AliExpress (Cool Jazz)- DSA 1U Keycaps](https://www.aliexpress.com/item/2251832643863132.html), Choc: [MKUltra Corporation - MBK Choc Keycaps](https://mkultra.click/mbk-choc-keycaps)
-M2 6mm screws | Secure main PCB and plate PCBs | 8 | | [AliExpress (wuhushiyu) - 200PCS-M2 Mix - Black](https://www.aliexpress.com/item/32862529967.html)
-M2 nuts | Secure main PCB and plate PCBs | 8 | | See M2 set above
-M2 8mm male-female standoffs | Raise top plate PCB above microcontroller | 4 | | See M2 set above
-2mm tall rubber bumpons | Raise board above desk surface and provide skid resitance | 6 | Shop around - you can get cheaper alternatives if you don't need 96 of them! | [Amazon - 3M SJ5302 Clear Bumpon Blister Pack (96 Bumpons)](https://www.amazon.com/SJ5302-Clear-Bumpon-Blister-Bumpons/dp/B01ACPT2LU)
+Arduino Pro Micro | Microcontroller board | 1 | Or use another Pro Micro compatible board with same dimensions (confirmed Elite-C V4, nice!nano 2.0, and Adafruit KB2040 fit)
+6x6mm DIP 4-pin tactile switch | Reset button | 1 |
+1N4148 SOD-123 | Diodes for keyboard row-column matrix | 52 |
+Keyswitches |  | 52 | PCB mount (5 pin) switches recommended. For MX, any switches should work. For Choc, get Choc V1 switches.
+Keycaps |  | 52 | For MX, any keycaps should work. For Choc, get those which fit Choc V1 18mm x 17mm
+M2 6mm screws | Secure main PCB and plate PCBs | 8 |
+M2 nuts | Secure main PCB and plate PCBs | 8 |
+M2 8mm male-female standoffs | Raise top plate PCB above microcontroller | 4 |
+2mm tall rubber bumpons | Raise board above desk surface and provide skid resitance | 6 |
 
 I recommend using sockets for the Pro Micro. For socketing options, refer to [40% Keyboards' sockets article](https://www.40percent.club/2018/03/sockets.html).
 
@@ -160,3 +163,6 @@ These are the manufacturing settings I used when ordering from JLCPCB:
 * **Rev2.3** (2022-03-21)
     * Horizon Board Producer plugin: Upgrade to KiCad 6
     * PCB, Schematic: No physical changes. Files upgraded to KiCad 6, and Gerber files regenerated using updated files.
+* **Rev2.4** (2023-11-09)
+    * Horizon Board Producer plugin: Upgrade to KiCad 7
+    * PCB, Schematic: No physical changes. Files upgraded to KiCad 7, and Gerber files regenerated using updated files.
