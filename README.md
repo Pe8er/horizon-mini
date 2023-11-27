@@ -2,20 +2,14 @@
 
 ### Note:
 
-So far, this is a theoretical mod of the original, gorgeous Horizon. Changelog:
+This is a mod of the original, gorgeous Horizon. Changelog:
 
 - Removed 2 columns
 - Added battery connector
 - Added power switch
 - Replaced Horizon logos with Bloodborne rune graphics
 
-### Todo:
-
-1. ✅ ~~Measure if battery fits behind/above the power switch~~
-2. ✅ ~~Vertify that PCB isn't broken~~
-3. ✅ ~~Print~~
-4. ✅ ~~Assemble~~
-5. Test
+[Take a look at Issues section](https://github.com/Pe8er/horizon-mini/issues) for details on my progress.
 
 ---
 ### Original readme below 👇
@@ -24,7 +18,7 @@ So far, this is a theoretical mod of the original, gorgeous Horizon. Changelog:
 
 ![Horizon Choc + MX complete build top photo](images/horizon-choc-mx-top.jpg)
 
-Horizon is a 52 key (4x14) ortholinear keyboard, powered by an Arduino Pro Micro.
+Horizon is a 44 key (4x12) ortholinear keyboard, powered by an Arduino Pro Micro.
 
 This keyboard is a grid of 1U keys with no special features: no hotswap, no RGB, no OLED screen, no knobs.
 
@@ -87,9 +81,7 @@ Please note the board producer plugin expects the following folder structure:
 
 ## Keyboard firmware
 
-* [QMK](https://github.com/qmk/qmk_firmware/tree/master/keyboards/horizon)
-* ZMK
-    * Horizon shield definition is in [skarrmann's zmk-config](https://github.com/skarrmann/zmk-config)
+* ZMK only. Horizon Mini's shield definition is in [Pe8er's zmk-config](https://github.com/Pe8er/zmk-config-horizon-mini).
 
 ## Bill of materials
 
@@ -105,6 +97,8 @@ Sockets | so you don't need to solder the MCU itself | 1 | | [Aliexpress](https:
 MSK-12C02 | Power switch | 1 | | [Aliexpress](https://www.aliexpress.com/item/4000685483225.html?spm=a2g0o.order_list.order_list_main.11.55371802cNThgI)
 6x6mm DIP 4-pin tactile switch | Reset button | 1 | | [AliExpress (xin cheng electronic)- 6x6x10mm](https://www.aliexpress.com/item/32912263133.html)
 1N4148 SOD-123 | Diodes for keyboard row-column matrix | 52 | | [AliExpress (DSSRQI) - 1N4148 SOD-123](https://www.aliexpress.com/item/4000331408283.html)
+Battery | to eliminate wires | 1
+Battery socket | to plug into the PCB | 1
 Keyswitches |  | 44 | PCB mount (5 pin) switches recommended | MX: [AliExpress (KPrepublic) - Gateron Switch RGB 5pin Clear](https://www.aliexpress.com/item/3256801798608641.html), Choc: [MKUltra Corporation - Kailh Low Profile Choc Switches](https://mkultra.click/choc-switches)
 Keycaps |  | 44 | | MX: [AliExpress (Cool Jazz)- DSA 1U Keycaps](https://www.aliexpress.com/item/2251832643863132.html), Choc: [MKUltra Corporation - MBK Choc Keycaps](https://mkultra.click/mbk-choc-keycaps) / [wrk. Legend](https://worklouder.cc/shop/wrk-legend/)
 M2 6mm screws | Secure main PCB and plate PCBs | 8 | | [AliExpress (wuhushiyu) - 200PCS-M2 Mix - Black](https://www.aliexpress.com/item/32862529967.html)
