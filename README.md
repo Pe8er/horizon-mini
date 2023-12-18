@@ -10,13 +10,12 @@
 This is a mod of the original, gorgeous Horizon. Changelog:
 
 - Removed 2 columns
-- Added battery connector
-- Added power switch
-- Replaced Horizon logos with Bloodborne rune graphics
+- Fully wireless: added battery connector & power switch
+- Replaced Horizon logos with Tool (band) heptagram graphics
 
-[Take a look at Issues section](https://github.com/Pe8er/horizon-mini/issues) for details on my progress.
+# [⬇️ Download latest Gerbers](https://github.com/Pe8er/horizon-mini/releases/latest)
 
----
+
 ### Original readme below 👇
 
 # Horizon Keyboard
