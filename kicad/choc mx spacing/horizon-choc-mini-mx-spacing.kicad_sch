@@ -12,63 +12,11 @@
   )
 
   (lib_symbols
-    (symbol "+BATT_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+BATT_1" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power battery" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+BATT\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+BATT_1_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+BATT_1_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+BATT" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Connector:Conn_01x02_Female" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "Connector:Conn_01x02_Socket" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Conn_01x02_Female" (at 0 -5.08 0)
+      (property "Value" "Conn_01x02_Socket" (at 0 -5.08 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -77,16 +25,19 @@
       (property "Datasheet" "~" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
+      (property "ki_locked" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
       (property "ki_keywords" "connector" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+      (property "ki_description" "Generic connector, single row, 01x02, script generated" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Conn_01x02_Female_1_1"
+      (symbol "Conn_01x02_Socket_1_1"
         (arc (start 0 -2.032) (mid -0.5058 -2.54) (end 0 -3.048)
           (stroke (width 0.1524) (type default))
           (fill (type none))
@@ -483,7 +434,7 @@
       )
       (symbol "SW_PUSH_0_1"
         (rectangle (start -4.318 1.27) (end 4.318 1.524)
-          (stroke (width 0) (type default))
+          (stroke (width 0) (type solid))
           (fill (type none))
         )
         (polyline
@@ -493,7 +444,7 @@
             (xy 0.762 2.286)
             (xy 1.016 1.524)
           )
-          (stroke (width 0) (type default))
+          (stroke (width 0) (type solid))
           (fill (type none))
         )
         (pin passive inverted (at -7.62 0 0) (length 5.08)
@@ -519,7 +470,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag battery" (at 0 0 0)
+      (property "ki_keywords" "global power battery" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+BATT\"" (at 0 0 0)
@@ -571,7 +522,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
@@ -611,7 +562,7 @@
       (property "Datasheet" "~" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "flag power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0)
@@ -651,7 +602,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0)
@@ -785,7 +736,7 @@
   (junction (at 129.54 86.36) (diameter 0) (color 0 0 0 0)
     (uuid 810ed4ff-ffe2-4032-9af6-fb5ada3bae5b)
   )
-  (junction (at 229.87 129.54) (diameter 0) (color 0 0 0 0)
+  (junction (at 200.66 129.54) (diameter 0) (color 0 0 0 0)
     (uuid 8189d269-d7b2-4862-83b8-9b493b2fc997)
   )
   (junction (at 20.32 59.69) (diameter 0) (color 0 0 0 0)
@@ -842,6 +793,9 @@
   (junction (at 86.36 39.37) (diameter 0) (color 0 0 0 0)
     (uuid abe07c9a-17c3-43b5-b7a6-ae867ac27ea7)
   )
+  (junction (at 142.875 140.335) (diameter 0) (color 0 0 0 0)
+    (uuid adb712f7-c02a-4f03-bd2a-aa830592e410)
+  )
   (junction (at 63.5 66.04) (diameter 0) (color 0 0 0 0)
     (uuid aeb03be9-98f0-43f6-9432-1bb35aa04bab)
   )
@@ -862,9 +816,6 @@
   )
   (junction (at 63.5 86.36) (diameter 0) (color 0 0 0 0)
     (uuid c8a44971-63c1-4a19-879d-b6647b2dc08d)
-  )
-  (junction (at 142.875 140.335) (diameter 0) (color 0 0 0 0)
-    (uuid ca394202-acbb-4403-b8da-5172ac191cad)
   )
   (junction (at 185.42 39.37) (diameter 0) (color 0 0 0 0)
     (uuid cada57e2-1fa7-4b9d-a2a0-2218773d5c50)
@@ -917,10 +868,10 @@
 
   (no_connect (at 85.09 138.43) (uuid 0fc5db66-6188-4c1f-bb14-0868bef113eb))
   (no_connect (at 138.43 137.795) (uuid 3a61dedd-239a-41d3-86dc-5cddef250863))
+  (no_connect (at 231.14 139.7) (uuid 5b439853-cd37-451e-a308-38a40a9d1695))
+  (no_connect (at 231.14 137.16) (uuid 8136b167-76af-4673-8150-d98334feed9a))
   (no_connect (at 85.09 129.54) (uuid 89a8e170-a222-41c0-b545-c9f4c5604011))
   (no_connect (at 57.15 138.43) (uuid 98fe66f3-ec8b-4515-ae34-617f2124a7ec))
-  (no_connect (at 229.87 124.46) (uuid b0c362e9-5fbb-4a21-ae75-c1b1f93ea7ae))
-  (no_connect (at 229.87 127) (uuid c06e16c7-c997-4cdf-90d8-33fa1cc1aecf))
   (no_connect (at 71.12 129.54) (uuid d3e133b7-2c84-4206-a2b1-e693cb57fe56))
   (no_connect (at 43.18 129.54) (uuid da481376-0e49-44d3-91b8-aaa39b869dd1))
   (no_connect (at 43.18 138.43) (uuid e7d81bce-286e-41e4-9181-3511e9c0455e))
@@ -959,7 +910,7 @@
     (stroke (width 0) (type default))
     (uuid 088f77ba-fca9-42b3-876e-a6937267f957)
   )
-  (wire (pts (xy 229.87 129.54) (xy 232.41 129.54))
+  (wire (pts (xy 200.66 129.54) (xy 190.5 129.54))
     (stroke (width 0) (type default))
     (uuid 089d8f9a-14d9-46e7-921e-4987756520ec)
   )
@@ -1003,7 +954,7 @@
     (stroke (width 0) (type default))
     (uuid 18d11f32-e1a6-4f29-8e3c-0bfeb07299bd)
   )
-  (wire (pts (xy 229.87 129.54) (xy 229.87 132.08))
+  (wire (pts (xy 200.66 129.54) (xy 200.66 132.08))
     (stroke (width 0) (type default))
     (uuid 1b1b44b6-3145-47c4-83c5-f80312d6b1c5)
   )
@@ -1019,7 +970,7 @@
     (stroke (width 0) (type default))
     (uuid 2035ea48-3ef5-4d7f-8c3c-50981b30c89a)
   )
-  (wire (pts (xy 199.39 121.92) (xy 199.39 124.46))
+  (wire (pts (xy 231.14 121.92) (xy 231.14 124.46))
     (stroke (width 0) (type default))
     (uuid 2072a8cc-e608-46e6-8499-98f6c5fa8ac1)
   )
@@ -1091,7 +1042,7 @@
     (stroke (width 0) (type default))
     (uuid 501880c3-8633-456f-9add-0e8fa1932ba6)
   )
-  (wire (pts (xy 143.51 140.335) (xy 142.875 140.335))
+  (wire (pts (xy 138.43 140.335) (xy 142.875 140.335))
     (stroke (width 0) (type default))
     (uuid 53f6a263-55b8-47b4-bef6-d604204f7c26)
   )
@@ -1171,7 +1122,7 @@
     (stroke (width 0) (type default))
     (uuid 6d26d68f-1ca7-4ff3-b058-272f1c399047)
   )
-  (wire (pts (xy 195.58 121.92) (xy 199.39 121.92))
+  (wire (pts (xy 234.95 121.92) (xy 231.14 121.92))
     (stroke (width 0) (type default))
     (uuid 6e74791f-c90b-43a9-b844-44fee536e2f3)
   )
@@ -1271,7 +1222,7 @@
     (stroke (width 0) (type default))
     (uuid a5be2cb8-c68d-4180-8412-69a6b4c5b1d4)
   )
-  (wire (pts (xy 190.5 127) (xy 199.39 127))
+  (wire (pts (xy 240.03 127) (xy 231.14 127))
     (stroke (width 0) (type default))
     (uuid a6214c0c-b49f-48aa-996e-14873ccea417)
   )
@@ -1315,6 +1266,10 @@
     (stroke (width 0) (type default))
     (uuid b6135480-ace6-42b2-9c47-856ef57cded1)
   )
+  (wire (pts (xy 142.875 140.335) (xy 143.51 140.335))
+    (stroke (width 0) (type default))
+    (uuid b67cd371-6bcb-4df9-9f40-b6407f2d1dcb)
+  )
   (wire (pts (xy 168.91 59.69) (xy 168.91 80.01))
     (stroke (width 0) (type default))
     (uuid b7867831-ef82-4f33-a926-59e5c1c09b91)
@@ -1331,7 +1286,7 @@
     (stroke (width 0) (type default))
     (uuid bb7f0588-d4d8-44bf-9ebf-3c533fe4d6ae)
   )
-  (wire (pts (xy 190.5 132.08) (xy 199.39 132.08))
+  (wire (pts (xy 240.03 132.08) (xy 231.14 132.08))
     (stroke (width 0) (type default))
     (uuid bcf5f944-42d7-4f2f-aa4e-625e053ca743)
   )
@@ -1463,10 +1418,6 @@
     (stroke (width 0) (type default))
     (uuid f2c93195-af12-4d3e-acdf-bdd0ff675c24)
   )
-  (wire (pts (xy 138.43 140.335) (xy 142.875 140.335))
-    (stroke (width 0) (type default))
-    (uuid f3288fef-6dda-4644-8229-1c178ce903ac)
-  )
   (wire (pts (xy 113.03 86.36) (xy 129.54 86.36))
     (stroke (width 0) (type default))
     (uuid f345e52a-8e0a-425a-b438-90809dd3b799)
@@ -1508,17 +1459,10 @@
     (uuid feb26ecb-9193-46ea-a41b-d09305bf0a3e)
   )
 
-  (global_label "ROW2" (shape input) (at 229.87 137.16 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 00a48940-2b47-433d-b5e3-1651da77c337)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 237.4624 137.16 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "COL4" (shape input) (at 199.39 142.24 180) (fields_autoplaced)
+  (global_label "COL6" (shape input) (at 200.66 152.4 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 0a42f72f-d1a2-46be-887a-06de938f6377)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.2209 142.24 0)
+    (uuid 0a8cad18-fed1-40e6-88af-d3621a8b5921)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.8367 152.4 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1529,11 +1473,18 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "COL10" (shape input) (at 229.87 149.86 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 2dbe0444-8d8f-4723-9899-caa1fa618994)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 238.2486 149.86 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
+  (global_label "COL1" (shape input) (at 200.66 139.7 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 2cabd745-13a9-4b60-9335-779d0fd232a1)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.8367 139.7 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "COL3" (shape input) (at 200.66 144.78 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 3aa529fc-7789-46f6-9270-7112493c01e1)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.8367 144.78 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "COL4" (shape input) (at 86.36 26.67 90) (fields_autoplaced)
@@ -1550,10 +1501,31 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "RESET" (shape input) (at 199.39 129.54 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
+  (global_label "COL11" (shape input) (at 231.14 142.24 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 4977526e-1a23-4192-bdf7-59b203c13b35)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 240.1728 142.24 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "COL9" (shape input) (at 231.14 147.32 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 5b82c1c9-b5e6-487c-8c51-43cd0b8018a9)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 238.9633 147.32 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "RESET" (shape input) (at 231.14 129.54 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
     (uuid 62059da2-6584-4236-903a-70a80a9bb775)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 191.3139 129.54 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 239.2161 129.54 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "COL0" (shape input) (at 200.66 137.16 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 655c9aea-adff-4483-aab1-e17cd24ae069)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.8367 137.16 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1564,17 +1536,31 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "ROW3" (shape input) (at 229.87 134.62 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 6c50e83c-3637-4e4b-9007-5a65acd6ebe2)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 237.4624 134.62 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "COL9" (shape input) (at 168.91 26.67 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 6fcba724-4105-4a25-bb51-d30326e75ed4)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 168.91 19.5009 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "COL5" (shape input) (at 200.66 149.86 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 76826b56-a41d-4ef0-b5c1-f3a2939f23b5)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.8367 149.86 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "ROW2" (shape input) (at 200.66 134.62 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 7926d155-5f65-45dd-ae43-4daf7170aef9)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 193.0676 134.62 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "COL7" (shape input) (at 231.14 152.4 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 7b80c1b5-c2e4-4848-b097-22ea9c7010a7)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 238.9633 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -1585,24 +1571,17 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "COL9" (shape input) (at 229.87 147.32 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 92fda869-ab70-4476-9caf-d4acd51fcd32)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 237.0391 147.32 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
+  (global_label "ROW0" (shape input) (at 200.66 124.46 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 9682eb8c-a217-45c9-aa75-4a2a0bc414d3)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.4134 124.46 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "RESET" (shape input) (at 139.7 120.015 180) (fields_autoplaced)
     (effects (font (size 1.524 1.524)) (justify right))
     (uuid a06ec4f2-aa94-439c-8bfe-14664305576d)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 130.0089 120.015 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "COL0" (shape input) (at 199.39 152.4 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid a3f1a7bf-1b91-4e09-bfc4-a749f8f23045)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.2209 152.4 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1620,25 +1599,18 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "ROW0" (shape input) (at 199.39 137.16 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b246a461-46b1-47a4-8cc4-17c5dcd2bc9f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 191.7976 137.16 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "COL7" (shape input) (at 229.87 142.24 0) (fields_autoplaced)
+  (global_label "COL8" (shape input) (at 231.14 149.86 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid b2a4fcea-5a02-4124-b701-fc8622d021fe)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 237.0391 142.24 0)
+    (uuid bb2d0141-d87c-4294-802f-acdcd56dce81)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 238.9633 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "ROW1" (shape input) (at 199.39 134.62 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid bd4568e2-d796-4d6a-b500-6eb311e13ba0)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 191.7976 134.62 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
+  (global_label "COL10" (shape input) (at 231.14 144.78 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid bd148bbb-4940-4f4a-81fb-a7771eaa3919)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 240.1728 144.78 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "ROW1" (shape input) (at 222.25 66.04 0) (fields_autoplaced)
@@ -1655,27 +1627,6 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "COL6" (shape input) (at 229.87 139.7 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid c9b10e0c-c040-4b54-bb9f-da17e1689726)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 237.0391 139.7 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "COL8" (shape input) (at 229.87 144.78 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid cfca7734-c9a5-40ac-a4db-bb7028e85129)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 237.0391 144.78 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "COL2" (shape input) (at 199.39 147.32 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid d0bbdf66-7e30-4c6e-9780-e190f0a313a4)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.2209 147.32 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
   (global_label "ROW3" (shape input) (at 222.25 106.68 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid d2c08a15-14b8-4edf-9a34-37d6136f3baf)
@@ -1683,11 +1634,25 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "COL11" (shape input) (at 229.87 152.4 0) (fields_autoplaced)
+  (global_label "ROW3" (shape input) (at 231.14 134.62 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid d44a9ce1-a3a3-4f9f-99a1-0d939a91dde7)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 238.2486 152.4 0)
+    (uuid d4c8c3d4-8b78-434f-9a3b-7002733895dc)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 239.3866 134.62 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "COL4" (shape input) (at 200.66 147.32 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid d7711ace-0520-46d0-bf8d-e68fba4c4730)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.8367 147.32 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "ROW1" (shape input) (at 200.66 127 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid d9846ac4-f2ea-4ae2-91e2-e01ed7660b45)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 193.0676 127 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "COL5" (shape input) (at 102.87 26.67 90) (fields_autoplaced)
@@ -1697,17 +1662,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "COL5" (shape input) (at 199.39 139.7 180) (fields_autoplaced)
+  (global_label "COL2" (shape input) (at 200.66 142.24 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid daf88e45-3a9d-44e5-a03e-90b2c26dd382)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.2209 139.7 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "COL1" (shape input) (at 199.39 149.86 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid e21de22d-bfca-45fe-bd63-3a1a9402c5c3)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.2209 149.86 0)
+    (uuid e2acdb51-d4ce-4919-9b88-c5a9a3a340db)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.8367 142.24 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1723,13 +1681,6 @@
     (uuid e85bdbe6-bf1f-43bf-bde1-340f128e981b)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 201.93 18.2914 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "COL3" (shape input) (at 199.39 144.78 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid f3eb9a9b-5d23-4109-96c1-b997b55a7cf3)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.2209 144.78 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "COL10" (shape input) (at 185.42 26.67 90) (fields_autoplaced)
@@ -1756,7 +1707,7 @@
     (property "Value" "SW_Push" (at 25.4 34.4424 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 25.4 34.29 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 25.4 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 25.4 34.29 0)
@@ -1765,7 +1716,7 @@
     (pin "1" (uuid da151d0a-a1fa-4865-aa78-eb4b6082fbfd))
     (pin "2" (uuid 41ef6d8e-078c-46e5-a743-15f86f94b1c5))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW1") (unit 1)
         )
@@ -1782,7 +1733,7 @@
     (property "Value" "SW_Push" (at 25.4 54.7624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 25.4 54.61 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 25.4 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 25.4 54.61 0)
@@ -1791,7 +1742,7 @@
     (pin "1" (uuid 76a87642-211c-44f2-a488-190d6dc3728e))
     (pin "2" (uuid 741561bb-6157-4c58-bb00-0f2a32b21238))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW11") (unit 1)
         )
@@ -1817,7 +1768,7 @@
     (pin "1" (uuid 3f1d3b22-3ba1-4783-af8d-526bce7c36db))
     (pin "2" (uuid 449cc181-df4b-4d3b-93ef-0653c2171fe8))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D11") (unit 1)
         )
@@ -1843,7 +1794,7 @@
     (pin "1" (uuid 60a7dcc1-b459-4b69-be02-f48b66a815f0))
     (pin "2" (uuid fbca7d5b-4a19-4f46-9697-74b3068179aa))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D1") (unit 1)
         )
@@ -1860,7 +1811,7 @@
     (property "Value" "SW_Push" (at 25.4 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 25.4 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 25.4 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 25.4 74.93 0)
@@ -1869,7 +1820,7 @@
     (pin "1" (uuid 0a83f85d-78ad-480a-a5ba-773caced8f09))
     (pin "2" (uuid 9116f42f-8d27-4055-8fab-af8b6ed6959f))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW21") (unit 1)
         )
@@ -1895,7 +1846,7 @@
     (pin "1" (uuid 1cd85cce-d94a-4a92-8af2-23d3a2b66793))
     (pin "2" (uuid a26bc030-7d8a-4b19-aa84-9206cc0de2b0))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D21") (unit 1)
         )
@@ -1912,7 +1863,7 @@
     (property "Value" "SW_Push" (at 25.4 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 25.4 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 25.4 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 25.4 95.25 0)
@@ -1921,7 +1872,7 @@
     (pin "1" (uuid 62af6e3c-7d06-438a-b62f-014ae3262ea1))
     (pin "2" (uuid afc1392c-4488-4251-8167-de520abba754))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW33") (unit 1)
         )
@@ -1947,7 +1898,7 @@
     (pin "1" (uuid 3aec5e23-e675-4bcf-9a9e-48cb59d51927))
     (pin "2" (uuid 01657d30-6f8e-4bbd-a3dd-6a0742c69aca))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D33") (unit 1)
         )
@@ -1967,12 +1918,12 @@
     (property "Footprint" "horizon-footprints:Mount_M2" (at 43.18 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 43.18 127 0)
+    (property "Datasheet" "" (at 43.18 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 17adff9d-c581-42e4-b552-035b922b5256))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "H1") (unit 1)
         )
@@ -1992,12 +1943,12 @@
     (property "Footprint" "horizon-footprints:Mount_M2" (at 57.15 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 57.15 127 0)
+    (property "Datasheet" "" (at 57.15 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d5eb7c6e-b098-49b0-b366-c8b7c67afed0))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "H2") (unit 1)
         )
@@ -2017,12 +1968,12 @@
     (property "Footprint" "horizon-footprints:Mount_M2" (at 71.12 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 71.12 127 0)
+    (property "Datasheet" "" (at 71.12 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f0e6fae4-0008-43ed-8719-bf62839f601f))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "H3") (unit 1)
         )
@@ -2042,12 +1993,12 @@
     (property "Footprint" "horizon-footprints:Mount_M2" (at 85.09 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 85.09 127 0)
+    (property "Datasheet" "" (at 85.09 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 544c9ad7-a0b6-4f88-9dcd-908e3e2acf79))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "H4") (unit 1)
         )
@@ -2064,14 +2015,14 @@
     (property "Value" "Logo-Bottom" (at 51.5112 159.893 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "horizon-footprints:Logo_Horizon_Small" (at 44.45 160.02 0)
+    (property "Footprint" "horizon-footprints:bloodborne_moon" (at 44.45 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 44.45 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "LOGO1") (unit 1)
         )
@@ -2097,7 +2048,7 @@
     (pin "1" (uuid 481354ed-51b9-4db2-9835-781681979b4b))
     (pin "2" (uuid 77121855-7958-40c5-81ca-b386a811e84c))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D27") (unit 1)
         )
@@ -2114,7 +2065,7 @@
     (property "Value" "SW_Push" (at 124.46 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 124.46 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 124.46 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 124.46 74.93 0)
@@ -2123,7 +2074,7 @@
     (pin "1" (uuid d7de2887-c7b2-4bb7-a339-632f4f906224))
     (pin "2" (uuid f69de914-d2d4-4fcf-a7d6-ce76fea2e1a7))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW27") (unit 1)
         )
@@ -2149,7 +2100,7 @@
     (pin "1" (uuid 740c9c9e-c377-4082-a7c2-2dfeb8296429))
     (pin "2" (uuid 90b3e3a5-04e0-491b-97bf-2e8a21e1833b))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D28") (unit 1)
         )
@@ -2166,7 +2117,7 @@
     (property "Value" "SW_Push" (at 140.97 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 140.97 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 140.97 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 140.97 74.93 0)
@@ -2175,7 +2126,7 @@
     (pin "1" (uuid cec22d4a-eda3-4d50-8609-c3a123c120be))
     (pin "2" (uuid 05c4a04b-0442-4e18-9747-3d9fc4a562fe))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW28") (unit 1)
         )
@@ -2201,7 +2152,7 @@
     (pin "1" (uuid 6afdccaa-d9c7-4949-88e8-e04bfdac5efc))
     (pin "2" (uuid d2683b99-bb18-4d41-a0c5-df26e16e4210))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D22") (unit 1)
         )
@@ -2218,7 +2169,7 @@
     (property "Value" "SW_Push" (at 41.91 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 41.91 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 41.91 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 41.91 74.93 0)
@@ -2227,7 +2178,7 @@
     (pin "1" (uuid fc80fa5b-8c07-4dda-8002-331dcafd556b))
     (pin "2" (uuid 200b738a-50e9-4f57-b197-9a6a0ae11af3))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW22") (unit 1)
         )
@@ -2253,7 +2204,7 @@
     (pin "1" (uuid 1ec648ca-df29-4910-86ed-6f48e345dbdb))
     (pin "2" (uuid d7b67c11-d515-46cf-bcf0-0f0ef2d0158a))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D2") (unit 1)
         )
@@ -2270,7 +2221,7 @@
     (property "Value" "SW_Push" (at 41.91 34.4424 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 41.91 34.29 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 41.91 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 41.91 34.29 0)
@@ -2279,7 +2230,7 @@
     (pin "1" (uuid 6428332e-b689-4aa8-86bb-3bee31b6f177))
     (pin "2" (uuid d5128f0b-0a4f-4337-a7f7-9a3dfe4ad4f9))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW2") (unit 1)
         )
@@ -2305,7 +2256,7 @@
     (pin "1" (uuid 908ddeac-9465-4c6c-a1ef-0f4298c64f06))
     (pin "2" (uuid 07457c86-69f1-4f8b-b8da-927e1f2acbb0))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D12") (unit 1)
         )
@@ -2322,7 +2273,7 @@
     (property "Value" "SW_Push" (at 41.91 54.7624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 41.91 54.61 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 41.91 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 41.91 54.61 0)
@@ -2331,7 +2282,7 @@
     (pin "1" (uuid 782e74f8-8e76-4e6f-bfec-df9b9d96b19d))
     (pin "2" (uuid 6b013cb8-9e09-4a62-b02d-814d5cfa604e))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW12") (unit 1)
         )
@@ -2348,7 +2299,7 @@
     (property "Value" "SW_Push" (at 41.91 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 41.91 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 41.91 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 41.91 95.25 0)
@@ -2357,7 +2308,7 @@
     (pin "1" (uuid f4f6e269-d484-4c43-84cc-450e042e2e24))
     (pin "2" (uuid 4be2d863-39fc-49fd-99c7-77790b42f677))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW34") (unit 1)
         )
@@ -2383,7 +2334,7 @@
     (pin "1" (uuid 47c4da32-a886-4a7a-86ef-2f3db3797d7d))
     (pin "2" (uuid 8ac2bac7-c686-402e-9f05-089e132647d2))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D34") (unit 1)
         )
@@ -2409,7 +2360,7 @@
     (pin "1" (uuid 663e5097-d637-4088-8d27-2d72ff835abc))
     (pin "2" (uuid ec0137ed-9765-4dfb-9cee-4a1826ddb19d))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D23") (unit 1)
         )
@@ -2426,7 +2377,7 @@
     (property "Value" "SW_Push" (at 58.42 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 58.42 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 58.42 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 58.42 74.93 0)
@@ -2435,7 +2386,7 @@
     (pin "1" (uuid 3db00451-fbc3-4980-9f8f-a31cdc894554))
     (pin "2" (uuid fa7e24a1-3452-454e-88a7-8a0ff878392a))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW23") (unit 1)
         )
@@ -2461,7 +2412,7 @@
     (pin "1" (uuid fb4e7351-d265-4999-adf6-bc7596c21cf3))
     (pin "2" (uuid 119c633c-175b-4b38-bbc1-1a076032c16e))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D3") (unit 1)
         )
@@ -2478,7 +2429,7 @@
     (property "Value" "SW_Push" (at 58.42 34.4424 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 58.42 34.29 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 58.42 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 58.42 34.29 0)
@@ -2487,7 +2438,7 @@
     (pin "1" (uuid 0d32fbdb-2a37-4863-af10-fc85c1c6174f))
     (pin "2" (uuid a072347a-1cac-4ead-8c61-cfe38fd40342))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW3") (unit 1)
         )
@@ -2513,7 +2464,7 @@
     (pin "1" (uuid 06f47f49-2f33-4f2f-b0d3-0eed3e39513c))
     (pin "2" (uuid d783ffbc-572b-46a4-9dcd-8fdd49506da7))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D13") (unit 1)
         )
@@ -2530,7 +2481,7 @@
     (property "Value" "SW_Push" (at 58.42 54.7624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 58.42 54.61 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 58.42 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 58.42 54.61 0)
@@ -2539,7 +2490,7 @@
     (pin "1" (uuid 3b450865-b2ef-4d25-9b34-4d42975b5e24))
     (pin "2" (uuid 7cc510d9-2339-42a7-bb31-eff1142f0636))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW13") (unit 1)
         )
@@ -2556,7 +2507,7 @@
     (property "Value" "SW_Push" (at 58.42 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 58.42 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 58.42 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 58.42 95.25 0)
@@ -2565,7 +2516,7 @@
     (pin "1" (uuid 6e24aa9b-c7e6-40f2-905b-b9c541e0e2f6))
     (pin "2" (uuid 88f2670e-1113-4ed9-b644-cfdac6e8b249))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW35") (unit 1)
         )
@@ -2591,7 +2542,7 @@
     (pin "1" (uuid 4de018aa-33f9-4679-9406-fafd70ff0142))
     (pin "2" (uuid eca8c1f1-6751-4304-8a65-b05952048507))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D35") (unit 1)
         )
@@ -2617,7 +2568,7 @@
     (pin "1" (uuid 874dbaf8-adf6-4f01-81a0-e037bac53346))
     (pin "2" (uuid ee80c1b4-78a3-4713-a7cd-fc09dd9d2b28))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D24") (unit 1)
         )
@@ -2634,7 +2585,7 @@
     (property "Value" "SW_Push" (at 74.93 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 74.93 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 74.93 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 74.93 74.93 0)
@@ -2643,7 +2594,7 @@
     (pin "1" (uuid 9d4bb085-5413-4cad-9765-4f916ffbe612))
     (pin "2" (uuid 059f4155-bed3-4fb2-9baa-d569f31b7e5d))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW24") (unit 1)
         )
@@ -2669,7 +2620,7 @@
     (pin "1" (uuid 946a171e-cd55-473d-bab9-8d2c7c34161c))
     (pin "2" (uuid 00e39da0-4b3e-4884-a91e-86d729914953))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D4") (unit 1)
         )
@@ -2686,7 +2637,7 @@
     (property "Value" "SW_Push" (at 74.93 34.4424 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 74.93 34.29 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 74.93 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 74.93 34.29 0)
@@ -2695,7 +2646,7 @@
     (pin "1" (uuid 51bdd1cb-8a01-4b1c-940a-3ff4dd1de87c))
     (pin "2" (uuid 6025c071-1487-4c03-a645-f67437519813))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW4") (unit 1)
         )
@@ -2721,7 +2672,7 @@
     (pin "1" (uuid f5f0f4de-3749-46dc-b27f-bfcd298186ed))
     (pin "2" (uuid 3af9c2b9-4218-478c-9151-0141ebd5a3f8))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D14") (unit 1)
         )
@@ -2738,7 +2689,7 @@
     (property "Value" "SW_Push" (at 74.93 54.7624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 74.93 54.61 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 74.93 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 74.93 54.61 0)
@@ -2747,7 +2698,7 @@
     (pin "1" (uuid b7340f23-0eaa-48ae-aea8-b5b53a0ae99a))
     (pin "2" (uuid 9e5b0177-ea58-4f76-8b57-ff1c6e52d9df))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW14") (unit 1)
         )
@@ -2764,7 +2715,7 @@
     (property "Value" "SW_Push" (at 74.93 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 74.93 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 74.93 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 74.93 95.25 0)
@@ -2773,7 +2724,7 @@
     (pin "1" (uuid 69675058-6b96-42da-8df5-92aaf6930be8))
     (pin "2" (uuid a2306fdc-d8f4-42ce-83f7-03c3d3fe62be))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW36") (unit 1)
         )
@@ -2799,7 +2750,7 @@
     (pin "1" (uuid a12c94a5-1fd0-4cb6-9bfe-f7529f451405))
     (pin "2" (uuid 7fc6eda3-a41a-4ab9-935d-37e18cb30594))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D36") (unit 1)
         )
@@ -2825,7 +2776,7 @@
     (pin "1" (uuid 52820a90-7869-43b3-b870-39c015371964))
     (pin "2" (uuid b8eb5c02-d344-4431-a592-0e7ad9f9a78f))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D25") (unit 1)
         )
@@ -2842,7 +2793,7 @@
     (property "Value" "SW_Push" (at 91.44 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 91.44 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 91.44 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 91.44 74.93 0)
@@ -2851,7 +2802,7 @@
     (pin "1" (uuid 26edc121-4167-44e5-9aaf-65f4ac255233))
     (pin "2" (uuid c96fb61f-984b-4e24-874e-ad2f1e86f9d7))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW25") (unit 1)
         )
@@ -2877,7 +2828,7 @@
     (pin "1" (uuid a6347fea-87e1-4897-bfe2-729d24d2f085))
     (pin "2" (uuid 0452da17-4ccf-4bdc-9fc3-b0a09600bd55))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D5") (unit 1)
         )
@@ -2894,7 +2845,7 @@
     (property "Value" "SW_Push" (at 91.44 34.4424 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 91.44 34.29 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 91.44 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 91.44 34.29 0)
@@ -2903,7 +2854,7 @@
     (pin "1" (uuid ff163833-80b9-4bc7-baa1-aa11870ad397))
     (pin "2" (uuid 8d054a8d-7435-41ed-8832-6067aada259a))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW5") (unit 1)
         )
@@ -2929,7 +2880,7 @@
     (pin "1" (uuid 6a5c31ec-377a-49ec-ac1f-c5e2b0429978))
     (pin "2" (uuid 04fe80c8-218d-44ed-ad06-aee371b49a91))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D15") (unit 1)
         )
@@ -2946,7 +2897,7 @@
     (property "Value" "SW_Push" (at 91.44 54.7624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 91.44 54.61 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 91.44 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 91.44 54.61 0)
@@ -2955,7 +2906,7 @@
     (pin "1" (uuid d40ed1bf-6a69-492a-acf3-f71f1c7a81f2))
     (pin "2" (uuid 67320774-1745-4c89-bec7-2213f7bb7ecc))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW15") (unit 1)
         )
@@ -2972,7 +2923,7 @@
     (property "Value" "SW_Push" (at 91.44 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 91.44 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 91.44 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 91.44 95.25 0)
@@ -2981,7 +2932,7 @@
     (pin "1" (uuid 802bd717-75a4-4efc-bdc3-ab512c6bce65))
     (pin "2" (uuid 88ea0fe3-17bb-45bf-bf71-4da88c965186))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW37") (unit 1)
         )
@@ -3007,7 +2958,7 @@
     (pin "1" (uuid f89b1d5e-28c8-498c-b199-7acbd8607540))
     (pin "2" (uuid ce4b6c19-1441-4e43-8af4-a7f34dfbb538))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D37") (unit 1)
         )
@@ -3033,7 +2984,7 @@
     (pin "1" (uuid 581488ee-fe1f-43d1-a23d-526666571191))
     (pin "2" (uuid 58e02161-61cc-4d0f-bdc8-c497a25ae380))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D26") (unit 1)
         )
@@ -3050,7 +3001,7 @@
     (property "Value" "SW_Push" (at 107.95 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 107.95 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 107.95 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 107.95 74.93 0)
@@ -3059,7 +3010,7 @@
     (pin "1" (uuid 767e3782-90bf-4d7f-b1ef-719aa7013187))
     (pin "2" (uuid c34f5129-9516-486b-b322-ada2d7baa6ba))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW26") (unit 1)
         )
@@ -3085,7 +3036,7 @@
     (pin "1" (uuid aafd680e-f3de-44c3-b8d2-897188909f89))
     (pin "2" (uuid eb14ae89-b776-4a7c-b1cb-51227ede5631))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D6") (unit 1)
         )
@@ -3102,7 +3053,7 @@
     (property "Value" "SW_Push" (at 142.875 34.4424 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 142.875 34.29 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 142.875 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 142.875 34.29 0)
@@ -3111,7 +3062,7 @@
     (pin "1" (uuid b7844cf9-69d3-4f7a-977a-bfc30d5d4c82))
     (pin "2" (uuid ef11623e-ea9c-4a76-a028-9fae209a45f2))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW6") (unit 1)
         )
@@ -3137,7 +3088,7 @@
     (pin "1" (uuid bd922998-99cd-4322-9306-742dc8e1b2eb))
     (pin "2" (uuid e653c4d1-a654-4929-9dc1-f3c3d75c8cd4))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D16") (unit 1)
         )
@@ -3154,7 +3105,7 @@
     (property "Value" "SW_Push" (at 142.875 54.7624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 142.875 54.61 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 142.875 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 142.875 54.61 0)
@@ -3163,7 +3114,7 @@
     (pin "1" (uuid a5dfaf18-d33f-45c4-b76f-2a5051ec9118))
     (pin "2" (uuid f9570ec9-4338-4208-aee7-369a45a284f8))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW16") (unit 1)
         )
@@ -3180,7 +3131,7 @@
     (property "Value" "SW_Push" (at 107.95 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 107.95 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 107.95 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 107.95 95.25 0)
@@ -3189,7 +3140,7 @@
     (pin "1" (uuid cc93ecb4-fd7b-48b7-868d-89f294f07c27))
     (pin "2" (uuid b4eddc61-2cab-493a-b874-62b106cef9f4))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW38") (unit 1)
         )
@@ -3215,7 +3166,7 @@
     (pin "1" (uuid 60fc0348-15d2-462c-9b87-dbb507b8717b))
     (pin "2" (uuid 9efb25aa-d11e-4d2f-96a9-326a2f75dcc1))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D38") (unit 1)
         )
@@ -3232,7 +3183,7 @@
     (property "Value" "SW_Push" (at 124.46 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 124.46 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 124.46 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 124.46 95.25 0)
@@ -3241,7 +3192,7 @@
     (pin "1" (uuid 7a3fed5a-9b6f-45f0-9ad7-54e1bda0ea60))
     (pin "2" (uuid e234e19f-cd33-4584-947b-bf9feaf6cddd))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW39") (unit 1)
         )
@@ -3267,7 +3218,7 @@
     (pin "1" (uuid c0e13d91-53b7-4de6-8d61-7c13732113b8))
     (pin "2" (uuid b7496a40-6116-4192-b413-2a22be4b5f9f))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D39") (unit 1)
         )
@@ -3284,7 +3235,7 @@
     (property "Value" "SW_Push" (at 140.97 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 140.97 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 140.97 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 140.97 95.25 0)
@@ -3293,7 +3244,7 @@
     (pin "1" (uuid d40f18db-c543-4c22-a8b0-72b9c9e5ae8b))
     (pin "2" (uuid 88e4f832-79d6-4c54-9ce3-4328dcb9d5b5))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW40") (unit 1)
         )
@@ -3319,7 +3270,7 @@
     (pin "1" (uuid 218a2487-4406-4830-b6ad-8a4182eda4f4))
     (pin "2" (uuid da37a168-b259-4f98-9030-90f2f5ac962a))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D40") (unit 1)
         )
@@ -3345,7 +3296,7 @@
     (pin "1" (uuid 646182ef-83d3-48ef-8f13-39bd3cf49786))
     (pin "2" (uuid 9e39ed40-271f-40f8-b1c9-20b888c10512))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D29") (unit 1)
         )
@@ -3362,7 +3313,7 @@
     (property "Value" "SW_Push" (at 157.48 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 157.48 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 157.48 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 157.48 74.93 0)
@@ -3371,7 +3322,7 @@
     (pin "1" (uuid 8f29ec2b-5253-4ae2-bf8f-40e83998f739))
     (pin "2" (uuid a97391c0-c438-44dc-aec7-4249e6f62568))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW29") (unit 1)
         )
@@ -3397,7 +3348,7 @@
     (pin "1" (uuid f83c7689-506f-4228-94dd-e1c4dd714e67))
     (pin "2" (uuid 8dcf91a3-1716-406f-975d-a5e4d347a64c))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D7") (unit 1)
         )
@@ -3414,7 +3365,7 @@
     (property "Value" "SW_Push" (at 157.48 34.4424 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 157.48 34.29 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 157.48 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 157.48 34.29 0)
@@ -3423,7 +3374,7 @@
     (pin "1" (uuid da710602-5c6f-4ba5-b461-48eb0116bbbe))
     (pin "2" (uuid 0ef32369-e37b-408d-9752-7cbb993d9abb))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW7") (unit 1)
         )
@@ -3449,7 +3400,7 @@
     (pin "1" (uuid 8e26d683-7d6a-43d4-94be-a23bd5dccfe0))
     (pin "2" (uuid 8c236566-affb-486a-a6b4-97a0ea854a63))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D17") (unit 1)
         )
@@ -3466,7 +3417,7 @@
     (property "Value" "SW_Push" (at 157.48 54.7624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 157.48 54.61 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 157.48 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 157.48 54.61 0)
@@ -3475,7 +3426,7 @@
     (pin "1" (uuid 0648b195-3f37-49a2-a952-4c5886b521de))
     (pin "2" (uuid 2ca148b4-658e-4a63-ab5c-2e293c8a2284))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW17") (unit 1)
         )
@@ -3492,7 +3443,7 @@
     (property "Value" "SW_Push" (at 157.48 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 157.48 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 157.48 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 157.48 95.25 0)
@@ -3501,7 +3452,7 @@
     (pin "1" (uuid b285d77c-3eef-4763-b6e4-d7759b529dfd))
     (pin "2" (uuid 856c0384-2dfc-47d2-a66c-a145c3149f14))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW41") (unit 1)
         )
@@ -3527,7 +3478,7 @@
     (pin "1" (uuid e89e5b16-554a-4d97-8f95-fc89c9b40d74))
     (pin "2" (uuid 10e5ae6d-e43e-4ff8-abc5-fd9df16782da))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D41") (unit 1)
         )
@@ -3553,7 +3504,7 @@
     (pin "1" (uuid 0e852933-f119-4b7f-a503-b829e02656a9))
     (pin "2" (uuid 96cc7009-e5c2-4181-9848-d145b9196cc4))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D30") (unit 1)
         )
@@ -3570,7 +3521,7 @@
     (property "Value" "SW_Push" (at 173.99 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 173.99 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 173.99 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 173.99 74.93 0)
@@ -3579,7 +3530,7 @@
     (pin "1" (uuid 85a22866-16c5-4384-bc0b-22ed5b68a467))
     (pin "2" (uuid 6150d77e-0e79-4609-a9ad-f39ba34a63b4))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW30") (unit 1)
         )
@@ -3605,7 +3556,7 @@
     (pin "1" (uuid 17a6bac3-e9f6-495e-be83-418646662ace))
     (pin "2" (uuid acb025c1-3784-47d1-b5e9-772bcda8c549))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D8") (unit 1)
         )
@@ -3622,7 +3573,7 @@
     (property "Value" "SW_Push" (at 173.99 34.4424 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 173.99 34.29 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 173.99 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 173.99 34.29 0)
@@ -3631,7 +3582,7 @@
     (pin "1" (uuid c0c3e2b6-4759-48ec-95b1-882d85817a23))
     (pin "2" (uuid b71ea2fc-03b3-4a1a-950e-5a040f1be797))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW8") (unit 1)
         )
@@ -3657,7 +3608,7 @@
     (pin "1" (uuid 85488e93-2df7-4454-9eaa-98cff69c975c))
     (pin "2" (uuid e64c4737-817f-4a8e-a7e9-e81506b1fe54))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D18") (unit 1)
         )
@@ -3674,7 +3625,7 @@
     (property "Value" "SW_Push" (at 173.99 54.7624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 173.99 54.61 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 173.99 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 173.99 54.61 0)
@@ -3683,7 +3634,7 @@
     (pin "1" (uuid a8b5a69a-24fc-4f3a-af15-1ced0fb0d73b))
     (pin "2" (uuid b830f01d-0d9c-451a-9ac4-3e5744deb516))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW18") (unit 1)
         )
@@ -3700,7 +3651,7 @@
     (property "Value" "SW_Push" (at 173.99 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 173.99 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 173.99 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 173.99 95.25 0)
@@ -3709,7 +3660,7 @@
     (pin "1" (uuid 5a5b7060-983c-4989-878e-3126720e998d))
     (pin "2" (uuid ed92ba08-98ec-48df-9584-41c899a43f78))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW42") (unit 1)
         )
@@ -3735,7 +3686,7 @@
     (pin "1" (uuid 6f52f85c-aac3-4a99-8226-7744ad08fdc3))
     (pin "2" (uuid 42795956-f125-4166-860d-4316fe3791b8))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D42") (unit 1)
         )
@@ -3761,7 +3712,7 @@
     (pin "1" (uuid 97972d9a-c8ac-431f-b1f4-0da8477b5639))
     (pin "2" (uuid 1ed7574f-dfd9-48ef-889b-e65459b62f49))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D31") (unit 1)
         )
@@ -3778,7 +3729,7 @@
     (property "Value" "SW_Push" (at 190.5 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 190.5 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 190.5 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 190.5 74.93 0)
@@ -3787,7 +3738,7 @@
     (pin "1" (uuid cb5eb8e7-f7ba-4f62-8bfe-a6dd2b84605e))
     (pin "2" (uuid 79e1811e-908a-4ac6-a9ea-8cf4bbc9a51d))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW31") (unit 1)
         )
@@ -3813,7 +3764,7 @@
     (pin "1" (uuid c2f8c49f-d49f-49e2-940a-a7b9765ffdf0))
     (pin "2" (uuid 2be498d5-e7b2-4098-b853-d60412f65c3b))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D9") (unit 1)
         )
@@ -3830,7 +3781,7 @@
     (property "Value" "SW_Push" (at 190.5 34.4424 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 190.5 34.29 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 190.5 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 190.5 34.29 0)
@@ -3839,7 +3790,7 @@
     (pin "1" (uuid 7167e0fb-15b0-446d-969c-ecf63e50097d))
     (pin "2" (uuid c25b90aa-c787-46a1-8b80-e5b9fd45039a))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW9") (unit 1)
         )
@@ -3865,7 +3816,7 @@
     (pin "1" (uuid b78bfc8f-0469-4499-ad41-c131461c3c5d))
     (pin "2" (uuid 4221b138-87b6-4073-a6e3-acb41ba2e601))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D19") (unit 1)
         )
@@ -3882,7 +3833,7 @@
     (property "Value" "SW_Push" (at 190.5 54.7624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 190.5 54.61 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 190.5 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 190.5 54.61 0)
@@ -3891,7 +3842,7 @@
     (pin "1" (uuid e3877396-3ff6-4b1d-9715-0d1a70961579))
     (pin "2" (uuid f094eb5d-05c7-4c16-84d0-9d4665317bfb))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW19") (unit 1)
         )
@@ -3908,7 +3859,7 @@
     (property "Value" "SW_Push" (at 190.5 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 190.5 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 190.5 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 190.5 95.25 0)
@@ -3917,7 +3868,7 @@
     (pin "1" (uuid 38c40dcc-c1da-4f6f-a147-01497313c7b0))
     (pin "2" (uuid 9b26d003-7efb-405a-8332-1a189f9d4920))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW43") (unit 1)
         )
@@ -3943,7 +3894,7 @@
     (pin "1" (uuid 1533b475-c834-40d3-ae2c-55eb46ae810f))
     (pin "2" (uuid 5c652bfd-7025-48e8-86f2-beee7cb38bd7))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D43") (unit 1)
         )
@@ -3969,7 +3920,7 @@
     (pin "1" (uuid cd8c6c53-febf-40c1-af77-5373add0fde7))
     (pin "2" (uuid 2792ed93-89db-4e51-99ff-281323e776eb))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D32") (unit 1)
         )
@@ -3986,7 +3937,7 @@
     (property "Value" "SW_Push" (at 207.01 75.0824 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 207.01 74.93 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 207.01 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 207.01 74.93 0)
@@ -3995,7 +3946,7 @@
     (pin "1" (uuid a17368fb-646b-4ffd-9057-0994609f8a46))
     (pin "2" (uuid ad2d033c-4040-4813-b5da-82cf827f9d86))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW32") (unit 1)
         )
@@ -4021,7 +3972,7 @@
     (pin "1" (uuid 65908b01-f0a0-46e1-84f2-bf49d46af2a7))
     (pin "2" (uuid 899d6960-0494-4e8f-9091-802503c02d1b))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D10") (unit 1)
         )
@@ -4038,7 +3989,7 @@
     (property "Value" "SW_Push" (at 207.01 34.4424 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 207.01 34.29 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 207.01 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 207.01 34.29 0)
@@ -4047,7 +3998,7 @@
     (pin "1" (uuid 504b138d-cda6-48ea-a44b-2c0d0cf874fc))
     (pin "2" (uuid d90db84e-7df3-4d1b-b263-27f7c3991121))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW10") (unit 1)
         )
@@ -4073,7 +4024,7 @@
     (pin "1" (uuid 2aabebab-10c6-4637-946b-cda31980f550))
     (pin "2" (uuid 18ee575f-d41e-4a26-ac0a-b229112d8877))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D20") (unit 1)
         )
@@ -4090,7 +4041,7 @@
     (property "Value" "SW_Push" (at 207.01 54.7624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 207.01 54.61 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 207.01 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 207.01 54.61 0)
@@ -4099,7 +4050,7 @@
     (pin "1" (uuid 8fa4f87a-9012-4f6f-a6c0-ec1c5f716184))
     (pin "2" (uuid 08fae221-7b6f-4c57-be73-6210c6206091))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW20") (unit 1)
         )
@@ -4116,7 +4067,7 @@
     (property "Value" "SW_Push" (at 207.01 95.4024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "horizon-footprints:SW_Choc" (at 207.01 95.25 0)
+    (property "Footprint" "horizon-footprints:SW_Choc_MX" (at 207.01 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 207.01 95.25 0)
@@ -4125,7 +4076,7 @@
     (pin "1" (uuid 469553b1-52fa-4564-9359-73b74ba8f58f))
     (pin "2" (uuid b64fe3cc-3a1f-41b6-9ac9-fa971c4a06a6))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "SW44") (unit 1)
         )
@@ -4151,7 +4102,7 @@
     (pin "1" (uuid 73fd78b9-9aa5-40d0-adab-1e5886c90dd7))
     (pin "2" (uuid a95b6208-cd25-486f-8a35-f7d7b1426174))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "D44") (unit 1)
         )
@@ -4168,14 +4119,14 @@
     (property "Value" "Logo-Top" (at 89.6112 159.893 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "horizon-footprints:Logo_Horizon_H" (at 82.55 160.02 0)
+    (property "Footprint" "horizon-footprints:bloodborne_moon" (at 82.55 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 82.55 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "LOGO2") (unit 1)
         )
@@ -4195,12 +4146,12 @@
     (property "Footprint" "horizon-footprints:Mount_M2" (at 57.15 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 57.15 135.89 0)
+    (property "Datasheet" "" (at 57.15 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b4856fa9-d711-4b3f-8ccf-343375c62dce))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "H6") (unit 1)
         )
@@ -4220,12 +4171,12 @@
     (property "Footprint" "horizon-footprints:Mount_M2" (at 43.18 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 43.18 135.89 0)
+    (property "Datasheet" "" (at 43.18 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0e1c6bbc-4cc4-4ce9-b48a-8292bb286da8))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "H5") (unit 1)
         )
@@ -4245,12 +4196,12 @@
     (property "Footprint" "horizon-footprints:Mount_M2" (at 71.12 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 71.12 135.89 0)
+    (property "Datasheet" "" (at 71.12 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 56dc9d1a-d125-4218-be7e-afbadad9f13c))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "H7") (unit 1)
         )
@@ -4270,12 +4221,12 @@
     (property "Footprint" "horizon-footprints:Mount_M2" (at 85.09 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 85.09 135.89 0)
+    (property "Datasheet" "" (at 85.09 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6f13bfbf-7f19-4b33-9de2-b8c15c8c88ee))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "H8") (unit 1)
         )
@@ -4305,7 +4256,7 @@
           (reference "#PWR07") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#PWR03") (unit 1)
         )
@@ -4336,7 +4287,7 @@
           (reference "RSW1") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "RBTN1") (unit 1)
         )
@@ -4366,7 +4317,7 @@
           (reference "#PWR0109") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#PWR011") (unit 1)
         )
@@ -4374,24 +4325,24 @@
     )
   )
 
-  (symbol (lib_name "+BATT_1") (lib_id "power:+BATT") (at 195.58 121.92 90) (unit 1)
+  (symbol (lib_id "power:+BATT") (at 234.95 121.92 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4e457a72-5a43-4e06-b43e-fbbfdd334bec)
-    (property "Reference" "#PWR01" (at 199.39 121.92 0)
+    (property "Reference" "#PWR01" (at 231.14 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+BATT" (at 191.77 121.92 90)
+    (property "Value" "+BATT" (at 238.76 121.92 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 195.58 121.92 0)
+    (property "Footprint" "" (at 234.95 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 195.58 121.92 0)
+    (property "Datasheet" "" (at 234.95 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c7ae9cce-88a3-490e-9565-7bb547535b11))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#PWR01") (unit 1)
         )
@@ -4421,7 +4372,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#PWR09") (unit 1)
         )
@@ -4451,7 +4402,7 @@
           (reference "#PWR01") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#PWR07") (unit 1)
         )
@@ -4459,24 +4410,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 190.5 127 270) (unit 1)
+  (symbol (lib_id "power:GND") (at 240.03 127 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5ec207da-87d6-4700-9757-9f58b2ad05a6)
-    (property "Reference" "#PWR02" (at 184.15 127 0)
+    (property "Reference" "#PWR02" (at 246.38 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 186.1058 127.127 0)
+    (property "Value" "GND" (at 244.4242 127.127 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 190.5 127 0)
+    (property "Footprint" "" (at 240.03 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 190.5 127 0)
+    (property "Datasheet" "" (at 240.03 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 81fd4795-076c-42bc-b9c4-d5d5d98d650e))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#PWR02") (unit 1)
         )
@@ -4496,7 +4447,7 @@
     (property "Footprint" "" (at 268.605 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 268.605 158.75 0)
+    (property "Datasheet" "~" (at 268.605 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 616ac3a0-3131-4ef0-b6b8-87561c74db93))
@@ -4506,7 +4457,7 @@
           (reference "#FLG01") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#FLG02") (unit 1)
         )
@@ -4514,24 +4465,24 @@
     )
   )
 
-  (symbol (lib_id "power:VCC") (at 190.5 132.08 90) (mirror x) (unit 1)
+  (symbol (lib_id "power:VCC") (at 240.03 132.08 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 828b72d1-6a46-49c1-8056-bc04d76ceafc)
-    (property "Reference" "#PWR05" (at 194.31 132.08 0)
+    (property "Reference" "#PWR05" (at 236.22 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "VCC" (at 186.1058 132.5118 0)
+    (property "Value" "VCC" (at 244.4242 132.5118 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 190.5 132.08 0)
+    (property "Footprint" "" (at 240.03 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 190.5 132.08 0)
+    (property "Datasheet" "" (at 240.03 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 06244f2a-3de2-420f-a93d-61d1dc956821))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#PWR05") (unit 1)
         )
@@ -4551,7 +4502,7 @@
     (property "Footprint" "" (at 278.765 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 278.765 158.75 0)
+    (property "Datasheet" "~" (at 278.765 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ce97bd47-7ff0-488d-a4a1-f05f454902f7))
@@ -4561,7 +4512,7 @@
           (reference "#FLG02") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#FLG03") (unit 1)
         )
@@ -4569,24 +4520,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 232.41 129.54 90) (unit 1)
+  (symbol (lib_id "power:GND") (at 190.5 129.54 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b61221a3-04b6-4f55-953e-e25fa0108cd1)
-    (property "Reference" "#PWR04" (at 238.76 129.54 0)
+    (property "Reference" "#PWR04" (at 184.15 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 236.8042 129.413 0)
+    (property "Value" "GND" (at 186.1058 129.413 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 232.41 129.54 0)
+    (property "Footprint" "" (at 190.5 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 232.41 129.54 0)
+    (property "Datasheet" "" (at 190.5 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 96069694-f40a-459a-bd44-6b22b542ef26))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#PWR04") (unit 1)
         )
@@ -4594,19 +4545,19 @@
     )
   )
 
-  (symbol (lib_id "ScottoKeebs:MCU_Nice_Nano_V2") (at 214.63 138.43 0) (mirror y) (unit 1)
+  (symbol (lib_id "ScottoKeebs:MCU_Nice_Nano_V2") (at 215.9 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c16c6713-55ef-46a0-8779-e017e73294ac)
-    (property "Reference" "U3" (at 214.63 117.475 0)
+    (property "Reference" "U3" (at 215.9 117.475 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Value" "Nice_Nano_V2" (at 214.63 120.015 0)
+    (property "Value" "Nice_Nano_V2" (at 215.9 120.015 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "ScottoKeebs_MCU:Nice_Nano_V2" (at 214.63 161.29 0)
+    (property "Footprint" "ScottoKeebs_MCU:Nice_Nano_V2" (at 215.9 161.29 0)
       (effects (font (size 1.524 1.524)) hide)
     )
-    (property "Datasheet" "" (at 187.96 201.93 90)
+    (property "Datasheet" "" (at 242.57 201.93 90)
       (effects (font (size 1.524 1.524)) hide)
     )
     (pin "10" (uuid 14ae884b-6868-4b72-86ed-44cd85709f96))
@@ -4634,7 +4585,7 @@
     (pin "20" (uuid 963f0c3f-90a3-4f57-b424-ecea492fab53))
     (pin "1" (uuid 8588eb77-ecd1-47aa-8873-bf0ee3ffbe69))
     (instances
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "U3") (unit 1)
         )
@@ -4664,7 +4615,7 @@
           (reference "#PWR02") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#PWR08") (unit 1)
         )
@@ -4694,7 +4645,7 @@
           (reference "#PWR011") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#PWR06") (unit 1)
         )
@@ -4702,13 +4653,13 @@
     )
   )
 
-  (symbol (lib_id "Connector:Conn_01x02_Female") (at 147.955 140.335 0) (unit 1)
+  (symbol (lib_id "Connector:Conn_01x02_Socket") (at 147.955 140.335 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d71f4858-87f1-4a29-8967-498992c2b556)
-    (property "Reference" "BATJ2" (at 148.6662 140.7703 0)
+    (property "Reference" "BATJ2" (at 149.86 140.335 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_01x02_Female" (at 148.6662 143.3072 0)
+    (property "Value" "Conn_01x02_Female" (at 149.86 142.875 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" (at 147.955 140.335 0)
@@ -4725,7 +4676,7 @@
           (reference "BATJ2") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "BATJ2") (unit 1)
         )
@@ -4745,7 +4696,7 @@
     (property "Footprint" "" (at 258.445 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 258.445 158.75 0)
+    (property "Datasheet" "~" (at 258.445 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5c94eafb-3836-4e3a-b577-7678268cb145))
@@ -4755,7 +4706,7 @@
           (reference "#FLG04") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "#FLG01") (unit 1)
         )
@@ -4787,7 +4738,7 @@
           (reference "PSW1") (unit 1)
         )
       )
-      (project "horizon-choc-mini"
+      (project "horizon-choc-mini-mx-spacing"
         (path "/ef1b4b98-541b-4673-a04f-2043250fc40a"
           (reference "PSW1") (unit 1)
         )
