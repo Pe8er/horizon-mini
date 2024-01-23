@@ -40,6 +40,7 @@
       8,
       9,
       10,
+      11,
       12,
       13,
       14,
@@ -67,7 +68,7 @@
       37,
       39
     ],
-    "visible_layers": "00290aa_00000001",
+    "visible_layers": "00290aa_80000001",
     "zone_display_mode": 1
   },
   "meta": {
