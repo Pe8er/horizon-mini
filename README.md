@@ -1,9 +1,12 @@
 # Horizon *Mini* Keyboard
 
+
 ![release](https://img.shields.io/github/v/release/Pe8er/horizon-mini)
 ![images/horizon-choc-mx-top.jpg](https://img.shields.io/github/last-commit/Pe8er/horizon-mini)
 ![Issues](https://img.shields.io/github/issues/Pe8er/horizon-mini)
 ![https://en.wikipedia.org/wiki/Free_and_open-source_software](https://img.shields.io/badge/FOSS-100%25-green.svg?style=flat)
+
+![Horizon Mini top photo](images/horizon-mini.jpeg)
 
 ### Note:
 
